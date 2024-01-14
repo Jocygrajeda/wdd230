@@ -2,13 +2,14 @@
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #5a0a0a;
-    background-color: #ebebeb;
+    background-color: #f8f1f1;
 }
 
 /* Header styles */
 header {
     display: flex;
     justify-content: center;
+    background-color: #94a6c7;
 }
 
 header img {
@@ -24,6 +25,7 @@ header h1 {
 /* Navigation styles */
 nav {
     background-color: #5a0a0a;
+    margin-top: 0%;
 }
 
 nav ul {
