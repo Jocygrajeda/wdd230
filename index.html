@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set, viewport, and page title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jocelyne Sainz - WDD 230 - Web Frontend Development</title>
+    <!-- Description and author metadata -->
+    <meta name="description" content="Explore Jocelyne Sainz's WDD 230 Web Frontend Development course assignment portal. Discover learning activities, site plans, and forms.">
+    <meta name="author" content="Jocelyne Sainz">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="images/">
+
+    <!-- Stylesheets for styling the page -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section with profile picture and name -->
+    <header>
+        <span>
+            <img src="images/IMG_1900.png" alt="Profile Pic" width="65" height="100">
+        </span>
+        <h1>Jocelyne Sainz</h1>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div>
+            <!-- Card section with learning activities -->
+            <section class="card" id="card1">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <!-- Links to learning activities for different weeks -->
+                    <li>Week 01: <a href="">Layout</a> | <a href="week1/media-query.html">Media Query</a> | <a href="">JS Pen</a></li>
+                    <li><a href=""></a>Week 02:</li>
+                    <li><a href=""></a>Week 03:</li>
+                    <li><a href=""></a>Week 04:</li>
+                    <li><a href=""></a>Week 05:</li>
+                    <li><a href=""></a>Week 06:</li>
+                </ul>
+            </section>
+
+            <!-- Card section with additional information -->
+            <section class="card" id="card2">
+                <h2>Information</h2>
+                <p>Texas, USA</p>
+                <p>Temperature</p>
+                <p>Page Visits: </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy;<a id="year"></a> - Jocelyne Sainz - Texas <a id="flag"></a></p>
+        <p>Last Modification: <a id="lastModified"></a></p>
+    </footer>
+
+    <!-- Script for getting dates -->
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
