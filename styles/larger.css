@@ -27,4 +27,24 @@
     main h2 {
         font-size: x-large;
     }
+
+    /* Responsive Navigation for Mobile Views */
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    nav li:hover {
+        background-color: #8d5454;
+    }
+
+    nav .active:hover {
+        background-color: #ac4040;
+    }
+
+    nav .active {
+        background-color: #7c4242;
+    }
 }
