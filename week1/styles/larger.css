@@ -1,0 +1,10 @@
+/* Add styles specific to larger views (e.g., desktop) */
+@media screen and (min-width: 550px) {
+
+    body {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+
+}
