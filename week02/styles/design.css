@@ -1,49 +1,65 @@
-body {
-    font-family: Roboto, helvetica, sans-serif;
-}
-
-header,
-main,
-footer {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+  font-family: Roboto, helvetica, sans-serif;
+  margin: 1rem;
+  }
+  
+  header,
+  main,
+  footer {
     max-width: 760px;
     margin: 0 auto;
-}
-
-marquee {
+  }
+  
+  div.banner {
+    border: 1px solid #bbb;
     padding: 1rem;
     background-color: #eee;
-}
-
-h1 {
+    font-weight: 700;
+       word-break: break-word;
+      text-align: center;
+  }
+  
+  h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-main {
+    margin: 1rem 0;
+  }
+  
+  main {
     display: grid;
-    grid-template-columns: repeat(2,1fr); /*create two columns*/
-    gap: 1rem; /*gap btwm columns*/
-}
-
-h2 {
+    grid-template-columns: 1fr 200px;
+    grid-gap: 1.5rem;
+  }
+  
+  section {
+      padding: 1rem;
+  }
+  
+  h2 {
     color: navy;
-    text-align: left; /* center to left */
-    grid-column: span 2; /*h2 span both columns*/
-}
-
-article p {
-    text-align: justify;
-}
-
-.callout {
+    grid-column: 1/3;
+  }
+  
+  h3 {
+    margin-bottom: .5rem;
+  }
+  
+  
+  .callout {
+    border:1px solid rgba(0, 0, 0, 0.1);
     color: #fff;
     background-color: #4a266a;
-    padding: 1rem; /* Fixing padding */
     grid-column: 1/3;
-}
-
-footer {
+    padding: 1rem;
+  }
+  
+  footer {
     margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem 0;
     font-size: smaller;
-    text-align: right;
-}
+  }
