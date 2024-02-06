@@ -1,0 +1,16 @@
+main{
+    text-align: left;
+}
+main img{
+    display: block;
+    width: 400px;
+    height: 600px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
