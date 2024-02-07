@@ -13,7 +13,7 @@ header {
 }
 
 header img {
-    padding: 45px;
+    padding: 55px;
 }
 
 header h1 {
@@ -41,9 +41,7 @@ nav a {
     text-decoration: none;
 }
 
-nav li:hover {
-    background-color: #8d5454;
-}
+
 
 nav .active:hover {
     background-color: #ac4040;
@@ -138,11 +136,7 @@ footer {
 	text-decoration: none;
 	color: #fff;
 }
-.navigation a:hover {
-	background-color: #bbb;
-	color: #151415;
-	font-weight: 700;
-}
+
 
 .open a {
 	display: block;
@@ -183,4 +177,26 @@ footer {
 	background-color: #000;
 	color: #fff;
 	border-color: #eee; 
+}
+
+/* Existing styles */
+
+#overlay-text {
+    position: absolute;
+    top: 350px;
+    left: 365px;
+    background: radial-gradient(#fff, #729bf44e);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+#overlay-text h2 {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 5rem;
 }
