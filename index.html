@@ -58,27 +58,23 @@
     <!-- Main content section -->
     <main>
         <!-- Pagina principal, imagen -->
-        <div id="hero">
-            <div id="hero-box">
-                <!-- Picture element for responsive images -->
-                <picture>
-                    <!-- source for mobile -->
-                    <source srcset="./images/Washington_mobile.webp" media="(max-width: 767px)" sizes="(max-width: 767px) 100vw">
-                    <!-- source for larger screens -->
-                    <source srcset="./images/washington-desk.webp 960w" media="(min-width: 960px) and (orientation: landscape) and (max-width: 960px)" sizes="(min-width: 960px) 960px">
-                    <!-- default image for other cases -->
-                    <img src="images/washington-desk.webp" alt="Favorite LDS Temple" width="1300" height="650">
-                </picture>
-                
-                               
+        <div class="hero">
+            <!-- Picture element for responsive images -->
+            <picture>
+                <!-- source for mobile -->
+                <source srcset="images/Washington_mobile.webp" media="(max-width: 767px)">
+                <!-- source for larger screens -->
+                <source srcset="images/washington-desk.webp" media="(min-width: 768px)">
+                <!-- default image for other cases -->
+                <img src="images/washington-desk.webp" alt="Favorite LDS Temple" class="hero-img">
+            </picture>
 
-                <!--overlay for text-->
-                <div id="overlay-text">
-                    <h2>Washington D.C Temple</h2>
-                </div>
+            <!-- overlay for text -->
+            <div class="overlay-text">
+                <h2>Washington D.C Temple</h2>
             </div>
         </div>
-    
+            
 
         <h1>WDD 230: Web Frontend Development</h1>
         <div>
