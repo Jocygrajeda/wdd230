@@ -178,27 +178,3 @@ footer {
 	color: #fff;
 	border-color: #eee; 
 }
-
-/* Existing styles */
-
-#overlay-text {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(#fff, #729bf44e);
-    border: 1px solid rgba(0, 0, 0, 0.75);
-    padding: 1.5rem;
-    box-shadow: 0 0 3rem #fff;
-    opacity: 0.75;
-    color: #000;
-}
-
-#overlay-text h2 {
-    margin: 0;
-    padding: 0.25rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: 'Montserrat Alternates', sans-serif;
-
-}

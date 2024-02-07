@@ -232,7 +232,7 @@ h2 {
     nav.open {
       display: flex;
       flex-direction: column;
-      background-color: rgba(45, 52, 41, 0.7);
+      background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
       top: 60px; 
       width: 100%;
@@ -245,3 +245,37 @@ h2 {
       text-decoration: none;
     }
   }
+
+  #sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #3e7ec2;
+}
+
+#sidebar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
