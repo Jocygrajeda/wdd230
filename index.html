@@ -62,11 +62,19 @@
             <div id="hero-box">
                 <!-- Picture element for responsive images -->
                 <picture>
-                    <!-- Source for larger screens -->
-                    <source srcset="./images/tokyo.jpg" media="(min-width: 768px)">
-                    <!-- Source for smaller screens -->
-                    <img id="hero-img" src="./images/tokyo.jpg" alt="Nac downtown">
+                    <!-- source for mobile -->
+                    <source srcset="./images/Washington_mobile.webp" media="(max-width: 767px)" sizes="400w">
+                    <!-- source for larger screens -->
+                    <source srcset="./images/washington-desk.webp" media="(min-width: 768px) and (orientation: landscape) and (max-width: 960px)" sizes="960w">
+                    <!-- default image for other cases -->
+                    <img id="hero-img" src="./images/washington-desk.webp" alt="Favorite LDS Temple">
                 </picture>
+
+                <!--overlay for text-->
+                <div id="overlay-text">
+                    <h2>Washington D.C Temple</h2>
+
+                </div>
             </div>
         </div>
     
