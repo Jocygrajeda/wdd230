@@ -250,9 +250,11 @@ h2 {
 }
 
 #sidebar {
+    width: 33.33%;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
+
 }
 
 h2,
@@ -311,3 +313,8 @@ figcaption {
         grid-column: span 2;
     }
 }
+
+header{
+    min-height: 70px;
+}
+
