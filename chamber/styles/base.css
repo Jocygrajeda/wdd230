@@ -199,6 +199,7 @@ main section {
 #main img {
     width: 55%;
     height: 250px;
+    padding: 50px;
 }
 
 /* Media Query Styles */
@@ -286,4 +287,14 @@ h2 {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.images-container figure:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 
+@media (max-width: 600px) {
+    .images-container figure:hover {
+        transform: none; 
+        transition: none; 
+    }
+}
