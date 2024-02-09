@@ -250,7 +250,7 @@ h2 {
 }
 
 #sidebar {
-    width: 33.33%;
+    width: 33.33%; /*this is the size of the side bar but its not working how i want to in a smaller screen*/
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
