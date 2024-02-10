@@ -26,11 +26,14 @@ header h1 {
 nav {
     background-color: #5a0a0a;
     margin-top: 0%;
+	display: flex;
+	justify-content: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0%;
+	display: flex;
 }
 
 nav a {
