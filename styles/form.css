@@ -1,13 +1,19 @@
-main{
-	padding-top: 40px;
-	padding-bottom: 40px;
+:root {
+    --main-padding: 40px;
+    --header-bg-color: #94a6c7;
+    --nav-bg-color: #5a0a0a;
+}
+
+main {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
 }
 
 /* Header styles */
 header {
     display: flex;
     justify-content: center;
-    background-color: #94a6c7;
+    background-color: var(--header-bg-color);
 }
 
 header img {
@@ -22,12 +28,11 @@ header h1 {
 
 /* Navigation styles */
 nav {
-    background-color: #5a0a0a;
+    background-color: var(--nav-bg-color);
     margin-top: 0%;
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0%;
@@ -54,6 +59,7 @@ nav .active {
 
 /* Footer styles */
 footer {
+	font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     color: #fff;
     background-color: #520404;
@@ -93,6 +99,7 @@ footer {
 }
 
 .navigation a {
+	font-family: 'Montserrat Alternates', sans-serif;
 	display: none;
 	padding: 1rem;
 	text-align: center;
@@ -149,6 +156,7 @@ footer {
 }
 
 main form {
+	font-family: 'Montserrat Alternates', sans-serif;
     background-color: var(--form-background-color);
     color: var(--form-text-color);
     padding: 20px;
