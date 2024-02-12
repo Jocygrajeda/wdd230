@@ -1,0 +1,29 @@
+{
+    "familyName": "Grajeda-Sainz",
+    "moveInDate": "2020-11-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Lauro Grajeda",
+        "gender": "Male",
+        "birthdate": "1968-12-09"
+      },
+      {
+        "name": "Veronica Sainz",
+        "gender": "Female",
+        "birthdate": "1969-10-31"
+      },
+      {
+        "name": "Melanie Grajeda",
+        "gender": "Male",
+        "birthdate": "2004-05-26"
+      },
+      {
+        "name": "Jocelyne Sainz",
+        "gender": "Female",
+        "birthdate": "2000-11-19"
+      }
+    ]
+  }
+  
