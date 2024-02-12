@@ -54,7 +54,40 @@
 
     <!--Main form section-->
     <main>
+        <form method="get" action="thankyou.html">
+            <label for="firstName">Applicant's First Name:</label>
+            <input type="text" name="firstName" id="firstName" required>
 
+            <label for="lastName">Applicant's Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required>
+
+            <label for="title">Applicant's Title or Position:</label>
+            <input type="text" name="title" id="title" pattern="^[a-zA-Z -]{7,}$" minlength="7">
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required placeholder="example@email.com">
+
+            <label for="mobile">Mobile Phone Number:</label>
+            <input type="tel" name="mobile" id="mobile" required>
+
+            <label for="orgName">Business/Organization's Name:</label>
+            <input type="text" name="orgName" id="orgName" required>
+
+            <label for="membership">Membership Level:</label>
+            <select name="membership" id="membership">
+                <option value="NP">NP Membership (non-fee)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Business/Organization's Description:</label>
+            <textarea name="description" id="description"></textarea>
+
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+
+            <input type="submit" value="Submit">
+        </form>
     </main>   
 
     <!-- Footer section -->
@@ -64,9 +97,9 @@
     </footer>
 
     <!-- Script for getting dates -->
+    <script src="scripts/timestamp.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
-    <script src="scripts/password.js"></script>
 </body>
 
 </html>
