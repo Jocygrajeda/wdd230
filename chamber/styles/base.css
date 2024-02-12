@@ -298,3 +298,32 @@ h2 {
         transition: none; 
     }
 }
+
+.membership-benefits {
+    flex-basis: 40%;
+    background-color: #d7dadb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 100px;
+    font-family: Montserrat, sans-serif;
+}
+
+.membership-level {
+    margin-bottom: 20px;
+}
+
+.membership-level h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.membership-level ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membership-level li {
+    margin-bottom: 5px;
+}
+
