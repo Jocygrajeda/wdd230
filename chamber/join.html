@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Metadata for character set, viewport, and page title -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jocelyne Sainz - WDD 230 - Join</title>
+    <title>Home | Nac Chamber of Commerce</title>
 
     <!-- Description and author metadata -->
-    <meta name="description" content="Explore Jocelyne Sainz's WDD 230 Web Frontend Development course assignment portal. Discover learning activities, site plans, and forms.">
+    <meta name="description" content="Explore Nac Chamber of Commerce">
     <meta name="author" content="Jocelyne Sainz">
 
     <!-- Open graph meta properties-->
-    <meta property="og:title" content="Jocelyne Sainz - WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Jocelyne Sainz - WDD 230 - Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://i0.wp.com/twoworldstreasures.com/wp-content/uploads/2021/04/NACOGDOCHES-THE-OLDEST-TOWN-IN-TEXAS.png?resize=683%2C1024&ssl=1"> 
-    <meta property="og:url" content="https://jocygrajeda.github.io/wdd230/"> 
+    <meta property="og:url" content="https://jocygrajeda.github.io/wdd230/"> <!--change this-->
 
-    <!-- Stylesheets for styling the page -->
+    <!--Normalize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--styles-->
     <link rel="stylesheet" href="styles/base.css">
-
+    <link rel="stylesheet" href="styles/larger.css">
+    
     <!--icon-->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon(1).ico">
 
     <!-- Google Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header section with profile picture and name -->
-    <header>
-        <span>
-            <img src="images/IMG_1900.webp" alt="Profile Pic" width="65" height="100">
-        </span>
-        <h1>Jocelyne Sainz</h1>
-        <div id="mode">💡</div>
-    </header>
-
+    <div id="content">
+    
+        <header>
+            <!--burger menu-->
+            <button id="hamburger">&#9776;</button>
+    
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="./images/logo.jpg" alt="Nac Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="site-plan-rafting.html">Community</a>
+                <a href="join.html">Join Us</a>
+            </nav>
+        </header>
     <!--Button-->
     <button id="menu"></button>
 
@@ -135,16 +148,28 @@
         </div>
     </main>
 
-    <!-- Footer section -->
     <footer>
-        <p>&copy;<a id="year"></a> - Jocelyne Sainz - Texas <a id="flag"></a></p>
-        <p>Last Modification: <a id="lastModified"></a></p>
-    </footer>
+        <!-- last edited-->
+        <p>Nac Chamber &copy; <span id="year"></span> | Jocelyne Sainz | WDD 230 project </p>
+        <p>Last Modification: <a id="lastModified"></a></p> 
 
-    <!-- Script for getting dates -->
-    <script src="scripts/timestamp.js"></script>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="./images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Script for getting dates/menu -->
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/menuHamburger.js"></script>
 </body>
 
 </html>

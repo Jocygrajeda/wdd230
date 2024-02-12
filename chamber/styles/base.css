@@ -327,3 +327,37 @@ h2 {
     margin-bottom: 5px;
 }
 
+:root {
+    --form-background-color: #f8f8f8;
+    --form-text-color: #0d0a0a;
+    --form-border-color: #ccc;
+}
+
+main form {
+	font-family: 'Montserrat Alternates', sans-serif;
+    background-color: var(--form-background-color);
+    color: var(--form-text-color);
+    padding: 20px;
+    border: 1px solid var(--form-border-color);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #469bf0;
+    color: #fff;
+    cursor: pointer;
+}
