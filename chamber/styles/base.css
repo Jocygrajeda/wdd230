@@ -361,3 +361,38 @@ input[type="submit"] {
     color: #fff;
     cursor: pointer;
 }
+
+.member-card {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.member-details {
+    padding: 15px;
+}
+
+.member-details h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.member-details p {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments for member cards */
+@media (max-width: 600px) {
+    .member-card {
+        margin-right: 0;
+    }
+}

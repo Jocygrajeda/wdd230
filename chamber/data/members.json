@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Working at BOYS & GIRLS CLUBS OF DEEP EAST TEXAS",
+        "address": "941 Tower Rd, Nacogdoches, TX 75961",
+        "phone": "(936) 560-6844",
+        "website": "https://www.bgcdet.org/",
+        "image": "",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Providing valuable programs and services to youth in Deep East Texas."
+      },
+      {
+        "name": "Pilgrims",
+        "address": " 928 Martin Luther King Jr Blvd, Nacogdoches, TX 75961",
+        "phone": "(936) 564-6145",
+        "website": "https://www.pilgrims.com/",
+        "image": "",
+        "membershipLevel": "Silver",
+        "otherInfo": "Specializing in high-quality manufacturing."
+      },
+      {
+        "name": "Stephen F. Austin State University",
+        "address": " 1936 North St, Nacogdoches, TX 75965",
+        "phone": "(936) 468-3401",
+        "website": "https://www.sfasu.edu/",
+        "image": "",
+        "membershipLevel": "Platinum",
+        "otherInfo": "Texas State University"
+      },
+      {
+        "name": "Coco Loco",
+        "address": " 930 South St, Nacogdoches, TX 75964",
+        "phone": "(936) 205-4410",
+        "website": "https://www.facebook.com/micocoloko",
+        "image": "green-sol.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Food."
+      },
+      {
+        "name": "A. L. Mangham Jr. Regional Airport (OCH)",
+        "address": "556 Terry Crawford Dr, Nacogdoches, TX 75964",
+        "phone": " (936) 560-9567",
+        "website": "https://www.nactx.us/1503/Nacogdoches-Texas",
+        "image": "",
+        "membershipLevel": "Silver",
+        "otherInfo": "Airpot"
+      },
+      {
+        "name": "Zip Nac",
+        "address":  "199 Brother John Road Nacogdoches, TX 75961 ",
+        "phone": "(936) 645-5094",
+        "website": "https://texastimetravel.com/directory/zip-nac/",
+        "image": "",
+        "membershipLevel": "Platinum",
+        "otherInfo": "Forest Trail Region."
+      },
+      {
+        "name": "Salon Haven",
+        "address": "118 N Church St, Nacogdoches, TX 75961",
+        "phone": "(936) 559-8722",
+        "website": "https://www.vagaro.com/salonhavennac",
+        "image": "",
+        "membershipLevel": "Gold",
+        "otherInfo": "Hair Salon."
+      }
+    ]
+  }
