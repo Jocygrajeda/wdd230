@@ -42,5 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
           membersSection.appendChild(memberCard);
        });
     }
+ 
+    const gridViewBtn = document.getElementById("gridViewBtn");
+    const listViewBtn = document.getElementById("listViewBtn");
+ 
+    gridViewBtn.addEventListener("click", function () {
+       toggleView("grid");
+    });
+ 
+    listViewBtn.addEventListener("click", function () {
+       toggleView("list");
+    });
  });
  
