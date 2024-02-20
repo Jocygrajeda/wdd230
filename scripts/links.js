@@ -9,21 +9,24 @@ async function getLinks() {
 
 function displayLinks(weeks) {
     const list = document.querySelector(".links");
-
-    weeks.forEach(week => {
-        const listElement = document.createElement('li');
-        listElement.textContent = `${week.week}`;
-
-        week.links.forEach(link => {
-            let aElement = document.createElement('a');
-            aElement.setAttribute("href", baseURL + "/" + link.url);
-            aElement.textContent = `${link.title}`;
-            
-            listElement.appendChild(aElement);
-        });
-
-        list.appendChild(listElement);
+  
+    weeks.forEach((week) => {
+      const listElement = document.createElement("li");
+      listElement.innerHTML = `<strong>${week.week}</strong>`;
+  
+      const linkList = document.createElement("ul");
+  
+      week.links.forEach((link) => {
+        const listItem = document.createElement("li");
+        const linkElement = document.createElement("a");
+        linkElement.setAttribute("href", baseURL + link.url);
+        linkElement.textContent = link.title;
+  
+        listItem.appendChild(linkElement);
+        linkList.appendChild(listItem);
+      });
+  
+      listElement.appendChild(linkList);
+      list.appendChild(listElement);
     });
-}
-
-getLinks();
+  }
