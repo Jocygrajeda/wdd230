@@ -1,0 +1,46 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          { "url": "week01/holygrail.html", "title": "Layout" },
+          { "url": "week01/media-query.html", "title": "Media Query" },
+          { "url": "https://codepen.io/Jocygrajeda/pen/ZEPJNmO", "title": "JS Pen" }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          { "url": "#", "title": "Design" },
+          { "url": "https://codepen.io/Jocygrajeda/pen/MWxEvKV", "title": "Menu Pen" },
+          { "url": "week02/bom.html", "title": "BOM" }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          { "url": "week03/images/landscape2webp.webp", "title": "Webp" },
+          { "url": "week03/lazyload.html", "title": "Lazy Load" },
+          { "url": "week03/responsive-images.html", "title": "Temple" },
+          { "url": "week03/bom.html", "title": "BOM2" }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          { "url": "https://codepen.io/Jocygrajeda/pen/vYPVERX", "title": "Pseudo" },
+          { "url": "images/Screenshot 2024-02-09 172726.png", "title": "Screenshot" }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          { "url": "https://codepen.io/Jocygrajeda/pen/XWGyNxX", "title": "Pseudo Elements" },
+          { "url": "week05/new-ward-members.json", "title": "Members" },
+          { "url": "week05/prophets.html", "title": "Prophets" },
+          { "url": "week05/weather.html", "title": "Weather" }
+        ]
+      }
+    ]
+  }
+  
