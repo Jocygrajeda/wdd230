@@ -292,16 +292,9 @@ h2 {
     transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
-    .images-container figure:hover {
-        transform: none; 
-        transition: none; 
-    }
-}
-
 .membership-benefits {
     flex-basis: 40%;
-    background-color: #d7dadb;
+    background-color: #ccc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -362,17 +355,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.member-card {
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-
-
 .member-details {
     padding: 15px;
 }
@@ -386,19 +368,11 @@ input[type="submit"] {
     margin-bottom: 5px;
 }
 
-/* Responsive adjustments for member cards */
-@media (max-width: 600px) {
-    .member-card {
-        margin-right: 0;
-    }
-}
-
-
 #members-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    background-color: #f4f4f4; 
-    padding: 20px;
+    gap: 100px;
+    background-color: #ccc; 
+    padding: 50px;
     border-radius: 10px;
 }
