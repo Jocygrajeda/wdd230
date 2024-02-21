@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "website": "https://www.pilgrims.com/",
             "image": "pilgrims.jpg",
             "membershipLevel": "Silver",
-            "otherInfo": "Specializing in high-quality manufacturing."
+            "otherInfo": "Specializing in high-quality manufacturing. Pilgrim’s is a leading global provider of high-quality food products, including well-recognized brands and value-added premium products, serving customers in more than 100 countries1."
           },
           {
             "name": "Stephen F. Austin State University",
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "website": "https://www.facebook.com/micocoloko",
             "image": "cocoloco.jpg",
             "membershipLevel": "Gold",
-            "otherInfo": "Food."
+            "otherInfo": "El Coco Loko is a restaurant located in Nacogdoches, Texas1. It is known for its authentic Mexican snacks and has received positive reviews for its fresh food and service"
           },
           {
             "name": "A. L. Mangham Jr. Regional Airport (OCH)",
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "website": "https://www.nactx.us/1503/Nacogdoches-Texas",
             "image": "Untitled.png",
             "membershipLevel": "Silver",
-            "otherInfo": "Airpot"
+            "otherInfo": "The A.L. Mangham Jr. Regional Airport is located in Nacogdoches, Texas1. It provides a wide range of services for the local and transient flying public2. The airport is serviced by runway 18-36, which has an asphalt surface that is 5001 feet in length by 75 feet wide2."
           },
           {
             "name": "Zip Nac",
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "website": "https://texastimetravel.com/directory/zip-nac/",
             "image": "zip.jpg",
             "membershipLevel": "Silver",
-            "otherInfo": "Forest Trail Region."
+            "otherInfo": "Zip Nac is a ziplining facility located on a beautiful 75-acre stretch of East Texas pines and hardwoods in Nacogdoches, Texas"
           },
           {
             "name": "Salon Haven",
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "website": "https://www.vagaro.com/salonhavennac",
             "image": "sh.jpg",
             "membershipLevel": "Gold",
-            "otherInfo": "Hair Salon."
+            "otherInfo": "Salon Haven is a beauty salon located on the beautiful brick streets of Nacogdoches, Texas1. They strive to bring the ultimate salon experience in a truly relaxing environment1. Whether you visit for a new haircut, color, style, or add extensions, their staff will help you feel beautiful, peaceful, and pampered long after you leave"
           }
     ];
 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const image = document.createElement('img');
             image.src = member.image;
-            image.alt = member.name + ' Logo';
+            image.alt = member.name + 'Logo';
 
             const heading = document.createElement('h3');
             heading.textContent = member.name;
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const paragraph = document.createElement('p');
             paragraph.textContent = member.otherInfo;
 
-            spotlightDiv.appendChild(image);
+ 
             spotlightDiv.appendChild(heading);
             spotlightDiv.appendChild(paragraph);
 
