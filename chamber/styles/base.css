@@ -372,8 +372,8 @@ input[type="submit"] {
 }
 
 .member-card img {
-    width: 100%;
-    height: auto;
+    width: 10px;
+    height: 10px;
     border-bottom: 1px solid #eaeaea;
 }
 

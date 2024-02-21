@@ -1,57 +1,49 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetchMembers();
- 
-    function toggleView(viewType) {
-       const membersSection = document.getElementById("members");
-       membersSection.className = viewType === "grid" ? "grid-view" : "list-view";
-    }
- 
-    function fetchMembers() {
-       fetch("data/members.json")
-          .then((response) => response.json())
-          .then((data) => {
-             // Process data and display members
-             displayMembers(data.members);
-          })
-          .catch((error) => console.error("Error fetching members:", error));
-    }
- 
-    function displayMembers(members) {
-       const membersSection = document.getElementById("members");
- 
-       //clear previous content
-       membersSection.innerHTML = "";
- 
-       //loop through members and create html elements
-       members.forEach((member) => {
-          const memberCard = document.createElement("div");
-          memberCard.className = "member-card";
- 
-          //add info to the card
-          memberCard.innerHTML = `
-             <img src="./data/images/${member.image}" alt="${member.name}">
-             <h4>${member.name}</h4>
-             <p>${member.address}</p>
-             <p>Phone: ${member.phone}</p>
-             <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-             <p>Membership Level: ${member.membershipLevel}</p>
-             <p>Other Info: ${member.otherInfo}</p>
-          `;
- 
-          //append the member card to the members section
-          membersSection.appendChild(memberCard);
-       });
-    }
- 
-    const gridViewBtn = document.getElementById("gridViewBtn");
-    const listViewBtn = document.getElementById("listViewBtn");
- 
-    gridViewBtn.addEventListener("click", function () {
-       toggleView("grid");
+    const viewToggle = document.getElementById('viewToggle');
+    const membersContainer = document.getElementById('members-container');
+
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => {
+            displayMembers(data.members);
+            toggleView();
+        });
+
+    viewToggle.addEventListener('change', toggleView);
+    console.log('Directory page is loaded');
+});
+
+function displayMembers(members) {
+    const membersContainer = document.getElementById('members-container');
+
+    membersContainer.innerHTML = '';
+        members.forEach(member => {
+            const memberCard = document.createElement('div');
+            memberCard.className = 'card';
+
+            memberCard.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name} Logo">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>Phone: ${member.phone}</p>
+                <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p>Membership Level: ${member.membershipLevel}</p>
+                <p>${member.otherInfo}</p>
+            `;
+            membersContainer.appendChild(memberCard);
+        });
+
+}
+
+function toggleView() {
+    const viewToggle = document.getElementById('viewToggle');
+    const membersContainer = document.getElementById('members-container');
+    const containers = membersContainer.querySelectorAll('div');
+    containers.forEach(memberContainer => {
+        memberContainer.classList.toggle('card', viewToggle.options[viewToggle.selectedIndex].value === 'grid');
+        memberContainer.classList.toggle('row', viewToggle.options[viewToggle.selectedIndex].value === 'list');
     });
- 
-    listViewBtn.addEventListener("click", function () {
-       toggleView("list");
-    });
- });
- 
+    membersContainer.classList.toggle('grid-view', viewToggle.options[viewToggle.selectedIndex].value === 'grid');
+    membersContainer.classList.toggle('list-view', viewToggle.options[viewToggle.selectedIndex].value === 'list');
+    
+}
