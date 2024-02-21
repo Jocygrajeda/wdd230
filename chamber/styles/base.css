@@ -371,11 +371,7 @@ input[type="submit"] {
     margin-bottom: 20px;
 }
 
-.member-card img {
-    width: 10px;
-    height: 10px;
-    border-bottom: 1px solid #eaeaea;
-}
+
 
 .member-details {
     padding: 15px;
@@ -395,4 +391,14 @@ input[type="submit"] {
     .member-card {
         margin-right: 0;
     }
+}
+
+
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 10px;
 }
