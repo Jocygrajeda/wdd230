@@ -26,8 +26,8 @@ const displayMembers = (members) => {
         div.appendChild(name);
 
         let image = document.createElement("img");
-        image.setAttribute("src", `member.image`);
-        image.setAttribute("class", `companyLogos`);
+        image.setAttribute("src", member.image);
+        image.setAttribute("class", "companyLogos");
         div.appendChild(image);
 
         let membershipLevel = document.createElement("h4");
