@@ -13,7 +13,6 @@ async function getLinks(url) {
     }
 }
 
-// Add this function to toggle the class on the #members section
 function toggleSectionClass(view) {
     const membersSection = document.getElementById("members");
 
@@ -23,6 +22,14 @@ function toggleSectionClass(view) {
     // Add the selected class
     membersSection.classList.add(`${view}-view`);
 }
+
+document.getElementById("listViewBtn").addEventListener("click", function () {
+    toggleSectionClass("list");
+});
+
+document.getElementById("gridViewBtn").addEventListener("click", function () {
+    toggleSectionClass("grid");
+});
 
 const displayMembers = (members) => {
     let container = document.querySelector("#members");
