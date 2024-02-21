@@ -53,25 +53,16 @@
         </nav>
     </header>
 
+    
     <main class="flex-layout">
-        <section id="viewSelection">
-            <h2>Chamber Directory</h2>
-            <div id="toggle-view">
-                <label>View: 
-                    <select id="viewToggle">
-                        <option value="grid">Grid</option>
-                        <option value="list">List</option>
-                    </select>
-                </label>
-            </div>
-        </section>
-        
-        <section id="directory-section">
-            <div id="members-container" class="grid-view">
-                
-            </div>
-        </section>
+        <div class="directory-cards">
+            <h2>Members Directory</h2>
+            <button class="btn" id="listViewBtn" onclick="toggleSectionClass('list')">List View</button>
+            <button class="btn" id="gridViewBtn" onclick="toggleSectionClass('grid')">Grid View</button>
+            <section id="members"></section>
+        </div>
     </main>
+    
      
     <footer>
         <!-- last edited-->

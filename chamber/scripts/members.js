@@ -1,49 +1,58 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const viewToggle = document.getElementById('viewToggle');
-    const membersContainer = document.getElementById('members-container');
+const baseURL = "https://jocygrajeda.github.io/wdd230/";
+const linksURL = "https://jocygrajeda.github.io/wdd230/chamber/data/members.json";
 
-    fetch('data/members.json')
-        .then(response => response.json())
-        .then(data => {
-            displayMembers(data.members);
-            toggleView();
-        });
+async function getLinks(url) {
 
-    viewToggle.addEventListener('change', toggleView);
-    console.log('Directory page is loaded');
-});
-
-function displayMembers(members) {
-    const membersContainer = document.getElementById('members-container');
-
-    membersContainer.innerHTML = '';
-        members.forEach(member => {
-            const memberCard = document.createElement('div');
-            memberCard.className = 'card';
-
-            memberCard.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} Logo">
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>Phone: ${member.phone}</p>
-                <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-                <p>Membership Level: ${member.membershipLevel}</p>
-                <p>${member.otherInfo}</p>
-            `;
-            membersContainer.appendChild(memberCard);
-        });
-
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log("Response: ", JSON.stringify(data));
+        displayMembers(data.members);
+    } catch (error) {
+        console.log(':( Error fetching data:', error);
+    }
 }
 
-function toggleView() {
-    const viewToggle = document.getElementById('viewToggle');
-    const membersContainer = document.getElementById('members-container');
-    const containers = membersContainer.querySelectorAll('div');
-    containers.forEach(memberContainer => {
-        memberContainer.classList.toggle('card', viewToggle.options[viewToggle.selectedIndex].value === 'grid');
-        memberContainer.classList.toggle('row', viewToggle.options[viewToggle.selectedIndex].value === 'list');
+
+const displayMembers = (members) => {
+    let container = document.querySelector("#members");
+
+    members.forEach((member) => {
+        let div = document.createElement("div");
+        div.classList.add("card");
+
+        let name = document.createElement("h2");
+        name.textContent = member.name;
+        div.appendChild(name);
+
+        let image = document.createElement("img");
+        image.setAttribute("src", `member.image`);
+        image.setAttribute("class", `companyLogos`);
+        div.appendChild(image);
+
+        let membershipLevel = document.createElement("h4");
+        membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
+        div.appendChild(membershipLevel);
+
+        let address = document.createElement("h4");
+        address.textContent = `Address: ${member.address}`;
+        div.appendChild(address);
+
+        let phone = document.createElement("h4");
+        phone.textContent = `Phone: ${member.phone}`;
+        div.appendChild(phone);
+
+        let website = document.createElement("a");
+        website.textContent = `${member.name} Website`;
+        website.setAttribute("href", member.website);
+        div.appendChild(website);
+
+        let otherInfo = document.createElement("p");
+        otherInfo.textContent = member.otherInfo;
+        div.appendChild(otherInfo);
+
+        container.appendChild(div);
     });
-    membersContainer.classList.toggle('grid-view', viewToggle.options[viewToggle.selectedIndex].value === 'grid');
-    membersContainer.classList.toggle('list-view', viewToggle.options[viewToggle.selectedIndex].value === 'list');
-    
 }
+
+getLinks(linksURL);
